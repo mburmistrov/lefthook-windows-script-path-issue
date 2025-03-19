@@ -1,0 +1,127 @@
+$ LEFTHOOK_VERBOSE=true git commit -m 'Test commit'
++ '[' '' = 0 ']'
++ call_lefthook run prepare-commit-msg .git/COMMIT_EDITMSG message
++ test -n ''
++ lefthook.exe -h
++ lefthook.bat -h
+++ git rev-parse --show-toplevel
++ dir=C:/Users/mmb/lefthook-windows-script-path-issue
+++ uname
+++ tr '[:upper:]' '[:lower:]'
++ osArch=mingw64_nt-10.0-19045
+++ uname -m
+++ sed 's/aarch64/arm64/;s/x86_64/x64/'
++ cpuArch=x64
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/lefthook-
+mingw64_nt-10.0-19045-x64/bin/lefthook.exe
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/@evilmart
+ians/lefthook/bin/lefthook-mingw64_nt-10.0-19045-x64/lefthook.exe
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/@evilmart
+ians/lefthook-installer/bin/lefthook.exe
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/lefthook/
+bin/index.js
++ C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/lefthook/bin/inde
+x.js run prepare-commit-msg .git/COMMIT_EDITMSG message
+│ [lefthook] cmd:    [git version]
+│ [lefthook] stdout: git version 2.31.1.windows.1
+
+│ [lefthook] cmd:    [git rev-parse --path-format=absolute --show-toplevel --git
+-path hooks --git-path info --git-dir]
+│ [lefthook] stdout: C:/Users/mmb/lefthook-windows-script-path-issue
+C:/Users/mmb/lefthook-windows-script-path-issue/.git/hooks
+C:/Users/mmb/lefthook-windows-script-path-issue/.git/info
+C:/Users/mmb/lefthook-windows-script-path-issue/.git
+
+│ [lefthook] cmd:    [git diff --name-only --cached --diff-filter=ACMR]
+│ [lefthook] cmd:    [git status --short --porcelain]
+│ [lefthook] cmd:    [git diff --name-only --cached --diff-filter=ACMRD]
+│ [lefthook] dir:    C:\Users\mmb\lefthook-windows-script-path-issue
+│ [lefthook] dir:    C:/Users/mmb/lefthook-windows-script-path-issue
+╭───────────────────────────────────────────────╮
+│ 🥊 lefthook v1.11.3  hook: prepare-commit-msg │
+╰───────────────────────────────────────────────╯
+│ [lefthook] dir:    C:\Users\mmb\lefthook-windows-script-path-issue
+│ [lefthook] skip: Hook prepare-commit-msg doesn't exist in the config
+│ [lefthook] stdout: example
+
+│ [lefthook] stdout: example
+
+│ [lefthook] stdout: A  example
+?? node_modules/
+
++ '[' '' = 0 ']'
++ call_lefthook run commit-msg .git/COMMIT_EDITMSG
++ test -n ''
++ lefthook.exe -h
++ lefthook.bat -h
+++ git rev-parse --show-toplevel
++ dir=C:/Users/mmb/lefthook-windows-script-path-issue
+++ uname
+++ tr '[:upper:]' '[:lower:]'
++ osArch=mingw64_nt-10.0-19045
+++ uname -m
+++ sed 's/aarch64/arm64/;s/x86_64/x64/'
++ cpuArch=x64
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/lefthook-
+mingw64_nt-10.0-19045-x64/bin/lefthook.exe
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/@evilmart
+ians/lefthook/bin/lefthook-mingw64_nt-10.0-19045-x64/lefthook.exe
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/@evilmart
+ians/lefthook-installer/bin/lefthook.exe
++ test -f C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/lefthook/
+bin/index.js
++ C:/Users/mmb/lefthook-windows-script-path-issue/node_modules/lefthook/bin/inde
+x.js run commit-msg .git/COMMIT_EDITMSG
+│ [lefthook] cmd:    [git version]
+│ [lefthook] stdout: git version 2.31.1.windows.1
+
+│ [lefthook] cmd:    [git rev-parse --path-format=absolute --show-toplevel --git
+-path hooks --git-path info --git-dir]
+│ [lefthook] stdout: C:/Users/mmb/lefthook-windows-script-path-issue
+C:/Users/mmb/lefthook-windows-script-path-issue/.git/hooks
+C:/Users/mmb/lefthook-windows-script-path-issue/.git/info
+C:/Users/mmb/lefthook-windows-script-path-issue/.git
+
+│ [lefthook] cmd:    [git status --short --porcelain]
+│ [lefthook] cmd:    [git diff --name-only --cached --diff-filter=ACMRD]
+│ [lefthook] cmd:    [git diff --name-only --cached --diff-filter=ACMR]
+╭───────────────────────────────────────╮
+│ 🥊 lefthook v1.11.3  hook: commit-msg │
+╰───────────────────────────────────────╯
+│ [lefthook] dir:    C:\Users\mmb\lefthook-windows-script-path-issue
+│ [lefthook] dir:    C:\Users\mmb\lefthook-windows-script-path-issue
+│ [lefthook] dir:    C:/Users/mmb/lefthook-windows-script-path-issue
+│ [lefthook] script doesn't exist: C:\Users\mmb\lefthook-windows-script-path-iss
+ue\.lefthook-local\commit-msg\hello-world.js
+│ [lefthook] stdout: example
+
+│ [lefthook] stdout: example
+
+│ [lefthook] stdout: A  example
+?? node_modules/
+
+node:internal/modules/cjs/loader:1215
+  throw err;
+  ^
+
+Error: Cannot find module 'C:\Users\mmb\lefthook-windows-script-path-issue\'C:\U
+sers\mmb\lefthook-windows-script-path-issue\.lefthook\commit-msg\hello-world.js'
+'
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1212:15)
+    at Module._load (node:internal/modules/cjs/loader:1043:27)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_ma
+in:164:12)
+    at node:internal/main/run_main_module:28:49 {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v20.19.0
+┃  hello-world.js ❯
+
+
+exit status 1
+  ────────────────────────────────────
+summary: (done in 0.10 seconds)
+🥊 hello-world.js
+

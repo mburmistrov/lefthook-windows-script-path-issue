@@ -36,6 +36,7 @@ summary: (done in 0.10 seconds)
 ```
 
 ## Notes
+- Log of a failed command is in `verbose-log.txt` file.
 - Tested on Lefthook v1.11.3 and Windows 10 x64.
 - The issue reproduces on different PCs.
 - The issue reproduces both in PowerShell and Git Bash.
