@@ -1,0 +1,1 @@
+I'm just a sample file, feel free to change me to test commit hooks.
